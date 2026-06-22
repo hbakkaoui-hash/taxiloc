@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Taxiloc — Mise en relation entre chauffeurs de taxi</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f2747" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Taxiloc" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brand">
+        <img class="brand-img" src="logo-crop.png" alt="Taxiloc — location & remplacement taxis" />
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <button class="nav-btn" data-view="annonces">Annonces</button>
+        <button class="nav-btn" data-view="publier">Publier</button>
+        <button class="nav-btn" data-view="espace">Mon espace</button>
+        <button class="nav-btn" data-view="profil">Mon profil</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="app"><!-- vues injectées ici --></main>
+
+  <footer class="footer">
+    <span>Taxiloc — outil professionnel réservé aux chauffeurs de taxi artisans (licence ADS).</span>
+    <span class="footer-links">
+      <a href="#" data-go="mentions">Mentions légales</a> ·
+      <a href="#" data-go="confidentialite">Confidentialité</a> ·
+      <a href="#" data-go="cgu">CGU</a>
+    </span>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="data.js"></script>
+  <script src="legal.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch((e) => console.warn("SW non enregistré:", e));
+      });
+    }
+  </script>
+</body>
+</html>

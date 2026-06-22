@@ -1,0 +1,17 @@
+{
+  "name": "Taxiloc — Mise en relation chauffeurs",
+  "short_name": "Taxiloc",
+  "description": "Outil professionnel de mise en relation entre chauffeurs de taxi : location, gérance, licence, remplacement.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f2747",
+  "theme_color": "#0f2747",
+  "lang": "fr",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
