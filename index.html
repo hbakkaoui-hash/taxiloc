@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Taxiloc — Mise en relation entre chauffeurs de taxi</title>
+  <title>Taxiloc — Annonces entre chauffeurs de taxi : location licence ADS, remplacement, matériel & accessoires</title>
+  <meta name="description" content="Taxiloc : plateforme d'annonces entre chauffeurs de taxi artisans. Location de licence ADS, location-gérance, remplacement, vente de licence, et matériel & accessoires taxi (lumineux, taximètre, terminal CB, plaque). Île-de-France et province." />
+  <meta name="keywords" content="annonces taxi, location licence taxi, licence ADS, location-gérance taxi, remplacement taxi, doublage taxi, vente licence taxi, achat licence ADS, accessoires taxi, matériel taxi, lumineux taxi, taximètre, terminal CB taxi, plaque taxi, chauffeur de taxi" />
+  <meta name="author" content="Taxiloc" />
+  <link rel="canonical" href="https://hbakkaoui-hash.github.io/taxiloc/" />
+
+  <!-- Open Graph — partage WhatsApp / Facebook / SMS (canal principal entre chauffeurs) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Taxiloc" />
+  <meta property="og:title" content="Taxiloc — Annonces entre chauffeurs de taxi" />
+  <meta property="og:description" content="Location de licence ADS, location-gérance, remplacement, vente de licence, matériel & accessoires taxi. Entre chauffeurs artisans." />
+  <meta property="og:url" content="https://hbakkaoui-hash.github.io/taxiloc/" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:image" content="https://hbakkaoui-hash.github.io/taxiloc/icon-512.png" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- ===== Vérification Google Search Console (propriété taxiloc) =====
+       TODO : méthode « Balise HTML » dans Search Console → colle le code et dé-commente. -->
+  <!-- <meta name="google-site-verification" content="COLLE_ICI_LE_CODE" /> -->
+
   <link rel="stylesheet" href="styles.css" />
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#0f2747" />
@@ -12,6 +31,24 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Taxiloc" />
+
+  <!-- ===== Données structurées (schema.org / JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Taxiloc",
+    "url": "https://hbakkaoui-hash.github.io/taxiloc/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web (PWA)",
+    "inLanguage": "fr",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "description": "Plateforme d'annonces entre chauffeurs de taxi artisans (licence ADS) : location de licence, location-gérance, remplacement, vente de licence, et matériel & accessoires taxi (lumineux, taximètre, terminal CB, plaque).",
+    "audience": { "@type": "Audience", "audienceType": "Chauffeurs de taxi artisans (ADS)" },
+    "areaServed": "France",
+    "keywords": "annonces taxi, location licence ADS, location-gérance taxi, remplacement taxi, vente licence taxi, accessoires taxi, matériel taxi, lumineux taxi, taximètre, plaque taxi"
+  }
+  </script>
 </head>
 <body>
   <header class="topbar">
@@ -29,11 +66,33 @@
     </div>
   </header>
 
-  <main id="app" class="app"><!-- vues injectées ici --></main>
+  <main id="app" class="app">
+    <!-- Contenu statique pour l'indexation Google : visible sans JavaScript.
+         L'application réelle (annonces Supabase) est injectée par app.js par-dessus. -->
+    <noscript>
+      <section>
+        <h1>Taxiloc — annonces entre chauffeurs de taxi artisans</h1>
+        <p>Taxiloc est une plateforme d'<strong>annonces réservée aux chauffeurs de taxi artisans</strong>
+           (licence ADS), en Île-de-France et en province. On y publie et on y trouve :</p>
+        <ul>
+          <li><strong>Location de licence taxi (ADS)</strong> et <strong>location-gérance</strong></li>
+          <li><strong>Location véhicule + licence</strong></li>
+          <li><strong>Remplacement / doublage</strong> de chauffeur</li>
+          <li><strong>Vente et achat de licence ADS</strong></li>
+          <li><strong>Matériel et accessoires taxi</strong> : lumineux, taximètre, terminal CB (TPE),
+              imprimante, plaque / totem, compteur horokilométrique</li>
+        </ul>
+        <p>Zones couvertes : Paris (75), Hauts-de-Seine (92), Seine-Saint-Denis (93),
+           Val-de-Marne (94), Yvelines (78), Val-d'Oise (95), Seine-et-Marne (77) et province.</p>
+        <p>Activez JavaScript pour consulter et publier les annonces.</p>
+      </section>
+    </noscript>
+  </main>
 
   <footer class="footer">
     <span>Taxiloc — outil professionnel réservé aux chauffeurs de taxi artisans (licence ADS).</span>
     <span class="footer-links">
+      <a href="#" data-go="aide">Comment ça marche</a> ·
       <a href="#" data-go="mentions">Mentions légales</a> ·
       <a href="#" data-go="confidentialite">Confidentialité</a> ·
       <a href="#" data-go="cgu">CGU</a>

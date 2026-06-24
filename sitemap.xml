@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap de Taxiloc.
+     Publié à : https://hbakkaoui-hash.github.io/taxiloc/sitemap.xml
+     À SOUMETTRE dans Google Search Console (propriété taxiloc, menu « Sitemaps »).
+     Application mono-page (PWA) : tout passe par l'accueil.
+     Mets à jour <lastmod> (AAAA-MM-JJ) à chaque modification. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hbakkaoui-hash.github.io/taxiloc/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

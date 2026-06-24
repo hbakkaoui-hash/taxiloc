@@ -229,6 +229,7 @@ function render() {
   else if (state.view === "espace") el.innerHTML = viewEspace();
   else if (state.view === "profil") el.innerHTML = viewProfil();
   else if (state.view === "detail") el.innerHTML = viewDetail();
+  else if (state.view === "aide") el.innerHTML = viewLegal("Comment ça marche ?", aideHTML());
   else if (state.view === "mentions") el.innerHTML = viewLegal("Mentions légales", legalMentions());
   else if (state.view === "confidentialite") el.innerHTML = viewLegal("Politique de confidentialité", legalConfidentialite());
   else if (state.view === "cgu") el.innerHTML = viewLegal("Conditions générales d'utilisation", legalCgu());
@@ -556,6 +557,25 @@ function viewProfil() {
 /* ============================================================
    ÉVÉNEMENTS
    ============================================================ */
+function aideHTML() {
+  return `
+  <p class="subtitle">Taxiloc met en relation les chauffeurs de taxi entre eux. Voici comment l'utiliser en 1 minute.</p>
+  <h2>1. Parcourir les annonces</h2>
+  <p>Onglet <b>Annonces</b> : filtre par type (location, gérance, licence, remplacement, matériel…), zone, budget, dates. Les plus récentes sont en haut.</p>
+  <h2>2. Publier une annonce</h2>
+  <p>Bouton <b>＋ Publier</b> → choisis le <b>type</b> → remplis → valide. Elle apparaît aussitôt chez tous les chauffeurs, en temps réel.</p>
+  <h2>3. Protéger ton numéro</h2>
+  <p>À la publication, choisis <b>« Masqué »</b> : ton numéro n'apparaît pas. Les intéressés laissent leurs coordonnées (formulaire), et tu les retrouves dans <b>Mon espace → Demandes reçues</b> pour les rappeler.</p>
+  <h2>4. Ton profil</h2>
+  <p>Remplis ton <b>profil</b> (zone, expérience, TP, CB) : les annonces s'affichent alors avec un <b>score de compatibilité</b> adapté à toi. Il reste privé sur ton téléphone.</p>
+  <h2>5. Les règles</h2>
+  <p>Outil <b>strictement professionnel</b> (taxi). Pas de liens externes ni de contenu hors sujet. Rappel : la location simple est interdite — voir les <a href="#" data-go="cgu">CGU</a>.</p>
+  <h2>6. Signaler</h2>
+  <p>Une annonce abusive ? Le bouton <b>🚩 Signaler</b> est sur chaque fiche.</p>
+  <h2>7. L'installer comme une appli</h2>
+  <p>Menu de ton navigateur → <b>« Ajouter à l'écran d'accueil »</b> : tu auras l'icône Taxiloc, en plein écran.</p>`;
+}
+
 function viewLegal(title, body) {
   return `
   <button class="back-link" data-go="annonces">← Retour aux annonces</button>
