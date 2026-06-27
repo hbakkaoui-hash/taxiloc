@@ -1,5 +1,5 @@
 /* ============================================================
-   TAXILOC — Constantes métier
+   BAKTAXI — Constantes métier
    (Les annonces proviennent de la base partagée Supabase ;
     aucune donnée personnelle réelle n'est stockée ici.)
    ============================================================ */

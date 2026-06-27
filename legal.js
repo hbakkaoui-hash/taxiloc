@@ -1,5 +1,5 @@
 /* ============================================================
-   TAXILOC — Informations éditeur & textes légaux
+   BAKTAXI — Informations éditeur & textes légaux
    (Brouillons à faire relire par un professionnel avant
     ouverture au grand public.)
    ============================================================ */
@@ -9,7 +9,7 @@ const EDITEUR = {
   siret: "478 346 166 00034",
   email: "bakkahassa@hotmail.com",
   telephone: "06 72 49 66 94",
-  hebergeurSite: "Netlify, Inc. — 512 2nd Street, Suite 200, San Francisco, CA 94107, USA — netlify.com",
+  hebergeurSite: "GitHub, Inc. (GitHub Pages) — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA — github.com",
   hebergeurDonnees: "Supabase — base de données hébergée dans l'Union européenne (région Irlande)",
   ville: "Paris",
 };

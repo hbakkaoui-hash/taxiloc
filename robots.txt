@@ -1,11 +1,11 @@
-# robots.txt — Taxiloc. Autorise l'indexation complète.
+# robots.txt — BakTaxi. Autorise l'indexation complète.
 #
-# NOTE : dépôt de PROJET (URL .../taxiloc/). Les moteurs ne lisent robots.txt
+# NOTE : dépôt de PROJET (URL .../baktaxi/). Les moteurs ne lisent robots.txt
 # QUE depuis la racine de l'hôte (https://hbakkaoui-hash.github.io/robots.txt),
-# donc ce fichier servi depuis /taxiloc/ sera IGNORÉ par Google.
+# donc ce fichier servi depuis /baktaxi/ sera IGNORÉ par Google.
 # Ce qui compte réellement : SOUMETTRE le sitemap dans Google Search Console.
 
 User-agent: *
 Allow: /
 
-Sitemap: https://hbakkaoui-hash.github.io/taxiloc/sitemap.xml
+Sitemap: https://hbakkaoui-hash.github.io/baktaxi/sitemap.xml

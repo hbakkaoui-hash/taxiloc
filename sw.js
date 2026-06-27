@@ -1,4 +1,4 @@
-/* TAXILOC — service worker
+/* BAKTAXI — service worker
    Stratégie "réseau d'abord" : en ligne = toujours la dernière version ;
    hors-ligne = on sert la dernière copie connue. */
 const CACHE = "baktaxi-v1";
