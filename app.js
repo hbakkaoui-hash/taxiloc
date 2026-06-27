@@ -381,7 +381,7 @@ function viewDetail() {
       <dl class="dl">${rows.join("")}</dl>
       ${a.conditions ? `<hr class="divider"/><h2>Conditions & exigences</h2><p>${esc(a.conditions)}</p>` : ""}
       <hr class="divider"/>
-      <a class="hint" style="color:var(--red);text-decoration:none" href="mailto:${esc(EDITEUR.email)}?subject=${encodeURIComponent("Signalement annonce Taxiloc")}&body=${encodeURIComponent("Je signale l'annonce " + a.id + " (" + (a.auteur || "") + "). Motif : ")}">🚩 Signaler cette annonce</a>
+      <a class="hint" style="color:var(--red);text-decoration:none" href="mailto:${esc(EDITEUR.email)}?subject=${encodeURIComponent("Signalement annonce BakTaxi")}&body=${encodeURIComponent("Je signale l'annonce " + a.id + " (" + (a.auteur || "") + "). Motif : ")}">🚩 Signaler cette annonce</a>
     </div>
     <aside>
       <div class="contact-card">
@@ -559,7 +559,7 @@ function viewProfil() {
    ============================================================ */
 function aideHTML() {
   return `
-  <p class="subtitle">Taxiloc met en relation les chauffeurs de taxi entre eux. Voici comment l'utiliser en 1 minute.</p>
+  <p class="subtitle">BakTaxi met en relation les chauffeurs de taxi entre eux. Voici comment l'utiliser en 1 minute.</p>
   <h2>1. Parcourir les annonces</h2>
   <p>Onglet <b>Annonces</b> : filtre par type (location, gérance, licence, remplacement, matériel…), zone, budget, dates. Les plus récentes sont en haut.</p>
   <h2>2. Publier une annonce</h2>
@@ -573,7 +573,7 @@ function aideHTML() {
   <h2>6. Signaler</h2>
   <p>Une annonce abusive ? Le bouton <b>🚩 Signaler</b> est sur chaque fiche.</p>
   <h2>7. L'installer comme une appli</h2>
-  <p>Menu de ton navigateur → <b>« Ajouter à l'écran d'accueil »</b> : tu auras l'icône Taxiloc, en plein écran.</p>`;
+  <p>Menu de ton navigateur → <b>« Ajouter à l'écran d'accueil »</b> : tu auras l'icône BakTaxi, en plein écran.</p>`;
 }
 
 function viewLegal(title, body) {

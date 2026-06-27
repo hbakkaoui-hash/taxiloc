@@ -1,7 +1,7 @@
 /* TAXILOC — service worker
    Stratégie "réseau d'abord" : en ligne = toujours la dernière version ;
    hors-ligne = on sert la dernière copie connue. */
-const CACHE = "taxiloc-v3";
+const CACHE = "baktaxi-v1";
 const ASSETS = [
   "./",
   "./index.html",

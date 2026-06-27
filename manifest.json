@@ -1,6 +1,6 @@
 {
-  "name": "Taxiloc — Mise en relation chauffeurs",
-  "short_name": "Taxiloc",
+  "name": "BakTaxi — Mise en relation chauffeurs",
+  "short_name": "BakTaxi",
   "description": "Outil professionnel de mise en relation entre chauffeurs de taxi : location, gérance, licence, remplacement.",
   "start_url": "./index.html",
   "scope": "./",
